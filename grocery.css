@@ -1,0 +1,74 @@
+.header{
+    background-color: #72b42d;
+    align-content: center;
+    font-size: 35px;
+    color: floralwhite;
+    border-radius: 8px;
+    height: 70px;
+
+}
+.logo{
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.heading{
+    position: relative;
+    top: 0px;
+    left: 30px;
+    right: 0px;
+    
+}
+.hcontent{
+    background-color: bisque;
+    height: 250px;
+    color: seagreen;
+    border-radius: 8px;
+
+}
+.fcontent{
+    background-color: bisque;
+    height: 250px;
+    color: seagreen;
+    border-radius: 8px;
+
+}
+.hleft{
+    position: relative;
+    top: 5px;
+    width: 180px;
+    left: 20px;
+}
+.hleftd{
+    position: relative;
+    top: -10px;
+    left: 35px;
+}
+.hleft2{
+    position: relative;
+    top: -252px;
+    width: 180px;
+    left: 220px;
+}
+.hleft2d{
+    position: relative;
+    top: -13px;
+    left: 35px;
+}
+.hleft3{
+    position: relative;
+    top: -511px;
+    width: 180px;
+    left: 420px;
+}
+.hleft3d{
+    position: relative;
+    top: -11px;
+    left: 35px;
+}
+mark{
+    background-color: yellow;
+}

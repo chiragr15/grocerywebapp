@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="grocery.css">
+        <link rel="stylesheet" href="le-frog/jquery-ui.css">
+        <link rel="stylesheet" href="animate.css-master/animate.css">
+        <link rel="stylesheet" href="animate.css-master/source/rotating_entrances/rotateIn.css">
+    </head>
+    <body>
+        <div class="header"><img src="logo.jepg.png"  class="logo"><font style="Garamond" class="heading"> Quest Grocery</font></div>
+        <div id="tabs">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Offers">Offers</a></li>
+                <li><a href="#Billing">Billing Details</a></li>
+            </ul>
+            <div id="Home"><div id="cattab">
+                <ul id="menu" style="width: 15%">
+                    <li>
+                        Shop by category
+                        <ul>
+                            <li><a href="#hcontent">Vegetables</a></li>
+                            <li><a href="#fcontent">Fruits</a></li>
+                            <li>Health Care</li>
+                            <li>Pet Care</li>
+                        </ul>
+                    </li>
+                </ul>
+                </div><h2 style="color: forestgreen;float: left">Vegetables</h2><br>
+                <div class="hcontent">
+                    <div class="hleft"><img  width="150px" height="150px" style="border-radius: 5px" id="prod1img"><p class="hleftd">Name :<input id="prod1name" type="text" style="width: 70px"><br>Price: Rs <input id="prod1price" style="width: 40px" type="text"><br>Quantity :&nbsp;<input id="onionq" type="number" style="width: 30px; background-color: darkseagreen"></p></div>
+                    
+                     <div class="hleft2"><img id="prod2img" width="150px" height="150px" style="border-radius: 5px;margin-top: -10px"><p class="hleft2d">Name :<input id="prod2name" type="text" style="width: 70px"><br>Price : Rs.<input type="text" id="prod2price" style="width: 40px"><br>Quantity :&nbsp;<input id="carrotsq" type="number" style="width: 30px; background-color: darkseagreen"></p></div>
+                    
+                    <div class="hleft3"><img id="prod3img" width="150px" height="150px" style="border-radius: 5px;margin-top: -13px"><p class="hleft3d">Name :<input type="text" id="prod3name" style="width: 70px"><br>Price : Rs.<input type="text" id="prod3price" style="width: 40px"><br>Quantity :&nbsp;<input id="tomatoq" type="number" style="width: 30px; background-color: darkseagreen"></p></div>
+                </div>
+                <br><br>
+                <div class="fcontent">
+                    <div class="hleft"><img  width="150px" height="150px" style="border-radius: 5px" id="fprod1img"><p class="hleftd">Name :<input id="fprod1name" type="text" style="width: 70px"><br>Price: Rs <input id="fprod1price" style="width: 40px" type="text"><br>Quantity :&nbsp;<input id="onionq" type="number" style="width: 30px; background-color: darkseagreen"></p></div>
+                    
+                     <div class="hleft2"><img id="fprod2img" width="150px" height="150px" style="border-radius: 5px;margin-top: -10px"><p class="hleft2d">Name :<input id="fprod2name" type="text" style="width: 70px"><br>Price : Rs.<input type="text" id="fprod2price" style="width: 40px"><br>Quantity :&nbsp;<input id="carrotsq" type="number" style="width: 30px; background-color: darkseagreen"></p></div>
+                    
+                    <div class="hleft3"><img id="fprod3img" width="150px" height="150px" style="border-radius: 5px;margin-top: -13px"><p class="hleft3d">Name :<input type="text" id="fprod3name" style="width: 70px"><br>Price : Rs.<input type="text" id="fprod3price" style="width: 40px"><br>Quantity :&nbsp;<input id="tomatoq" type="number" style="width: 30px; background-color: darkseagreen"></p></div>
+                </div>
+            </div>
+        </div>
+        <script src="jquery-2.1.3.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                var veg=[{
+                    name: "Onion",
+                    price: 60,
+                    imgsrc: "onions.jpeg"
+                },
+                         {
+                             name: "Carrot",
+                             price: 79,
+                             imgsrc: "carrots.jpeg"
+                         },
+                         {
+                             name: "Tomato",
+                             price: 39,
+                             imgsrc: "tomato.jpeg"
+                         }
+                    
+                ];
+                var fruits=[{
+                    name: "Mango",
+                    price: 129,
+                    imgsrc: "mango.jpeg"
+                },
+                            {
+                                name: "Jackfruit",
+                                price: 79,
+                                imgsrc: "jackfruit.jpeg"
+                            },
+                            {
+                                name: "Banana",
+                                price: 15,
+                                imgsrc: "banana.jpeg"
+                            }
+                    
+                ];
+                $("#prod1img").attr("src",veg[0].imgsrc);
+                $("#prod1name").val(veg[0].name);
+                $("#prod1price").val(veg[0].price);
+                 $("#fprod1img").attr("src",fruits[0].imgsrc);
+                $("#fprod1name").val(fruits[0].name);
+                $("#fprod1price").val(fruits[0].price);
+                   $("#prod2img").attr("src",veg[1].imgsrc);
+                $("#prod2name").val(veg[1].name);
+                $("#prod2price").val(veg[1].price);
+                
+                $("#fprod2img").attr("src",fruits[1].imgsrc);
+                $("#fprod2name").val(fruits[1].name);
+                $("#fprod2price").val(fruits[1].price);
+                  $("#prod3img").attr("src",veg[2].imgsrc);
+                $("#prod3name").val(veg[2].name);
+                $("#prod3price").val(veg[2].price);
+                
+                $("#menu").menu();
+                $("#tabs").tabs();
+                $(window).load(function() {
+                    
+                   $(".header").animate({fontSize:"55px"},"slow");
+                    $(".heading").animate({left: "90px"},"slow");
+                });
+                
+            });
+        </script>
+    </body>
+</html>

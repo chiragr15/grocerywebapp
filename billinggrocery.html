@@ -1,0 +1,178 @@
+<!DOCYYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.css">
+        <script src="jquery-2.1.3.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="bootstrap-4.3.1/dist/js/bootstrap.js"></script>\
+        <style>
+            table,tr,td{
+                border: 1px solid black
+            }
+        </style>
+    </head>
+    <body style="background-color:  #e6ffff">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12" style="height: 60px"></div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-12">
+                    <center>
+                    <span class="h1">Billing Details</span>
+                    </center>
+                </div>
+            </div>
+            <div class="container" style="background-color: beige;border-radius: 15px">
+            <div class="row">
+                <div class="col">
+                    <center>
+                    <table>
+                        <tr>
+                            <td>Customer Name :</td>
+                            <td><select class="custname"><option vlaue="">--select--</option>
+                            
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Billing date :
+                            </td>
+                            <td><span id="billdate"></span></td>
+                        </tr>
+                                
+                    </table>
+                        
+                                <table style="width: 600px" id="itemtable">
+                                    <tr>
+                                        <td>Item No</td>
+                                        <td>Item name</td>
+                                        <td>Price</td>
+                                        <td>Quantity</td>
+                                        <td>Total</td>
+                                    </tr>
+                                
+                                </table>
+                            
+                                    
+                        </center>
+                    <button class="btn btn-primary" style="margin-left: 200px;margin-top: -30px" id="addrow"> +</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div style="display:none" id="item_form">Select Item : &ensp;<select class="itmmenu"><option value="">--select--</option></select></div>
+        <script>
+            $(document).ready(function() {
+                var d = new Date();
+
+                var month = d.getMonth()+1;
+                var day = d.getDate();
+
+                var output = (day<10 ? '0' : '') + day + '/' +
+                (month<10 ? '0' : '') + month + '/' + d.getFullYear()
+                ;
+               $("#billdate").append(output); 
+                 var customer=[
+                     {
+                       name: "Chirag Rudresh",
+                       phone: 6362929350,
+                       address: "#18,Belaku RR nagar"     
+                     },
+                     {
+                       name: "Shashank M",
+                         phone: 9293485761,
+                         address: "#21,Panchajanya RR Nagar"
+                     },
+                     {
+                       name: "Rohan Iyengar",
+                         phone: 7762380125,
+                         address: "#802,Golden Grand Yeshwanthpur"
+                     },
+                     {
+                         name: "Akshay Vasu",
+                         phone: 6109273610,
+                         address: "#001,Vaishnavi Saphire Yeshwanthpur"
+                     }
+                 ];
+                var items=[
+                    {
+                      name: "Mango",
+                        price: 79,
+                        quantity: 0
+                    },
+                    {
+                      name: "Banana",
+                        price: 15,
+                        quantity: 0
+                    },
+                    {
+                      name: "Jackfruit",
+                        price: 120,
+                        quantity: 0
+                    },
+                    {
+                      name: "Carrot",
+                        price: 29,
+                        quantity: 0
+                    },
+                    {
+                      name: "Tomato",
+                        price: 40,
+                        quantity: 0
+                    },
+                    {
+                      name: "Onion",
+                        price: 70,
+                        quantity: 0
+                    },
+                    {
+                      name: "Shampoo",
+                        price: 59,
+                        quantity: 0
+                    },
+                    {
+                      name: "Soap",
+                        price: 29,
+                        quantity: 0
+                    },
+                    {
+                      name: "Broomsticks",
+                        price: 199,
+                        quantity: 0
+                    },
+                    {
+                      name: "Coca Cola",
+                        price: 20,
+                        quantity: 0
+                    },
+                    {
+                      name: "Tropicana Mixed Fruit",
+                        price: 13,
+                        quantity: 0
+                    },
+                    {
+                      name: "Aloe Vera Juice",
+                        price: 30,
+                        quantity: 0
+                    },
+                    
+                ];
+                for(var i=0;i<4;i++)
+                    {
+                        $(".custname").append("<option >"+customer[i].name+"</option>");
+                        $("#addrow").click(function() {
+                            
+                        });
+                    }
+                for(var i=0;i<items.length;i++)
+                    {
+                        $(".itmmenu").append("<option>"+items[i].name+"</option>");
+                    }
+                $("#addrow").click(function() {
+                   $("#item_form").css("display","true"); 
+                });
+            });
+        </script>
+    </body>
+</html>

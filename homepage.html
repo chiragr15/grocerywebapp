@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="sunny/jquery-ui.css">
+        <link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="homepage.css">
+        <script src="jquery-2.1.3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="bootstrap-4.3.1/dist/js/bootstrap.js"></script>
+        <style>
+            .login{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body style="background-color:  #e6ffff">
+        <div class="container">
+            <div class="row" style="background-color: #bbff99;border-radius: 15px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px">
+                <div class="col col-lg-12">
+                    
+                    <img src="logo.jepg.png" class="rounded-circle" style="height: 75px" id="logo">
+                    <font class="heading" style="color: forestgreen">Quest Grocery</font>
+                    <ul class="login" style="float: right">
+                        
+                            <a class="btn btn-primary" href="login.html" style="margin-right: 20px"><font style="font-size: 20px;color: whitesmoke;margin-bottom: -10px;">Login</font></a>
+                    </ul> 
+                    <div id="cart">
+                        <a class="btn btn-link" href="cart.html" style="float: right;"><font style="font-size: 17px;color: black"></font><u>go to cart</u></a>
+                        <img src="cart.png" style="float: right;height: 25px;margin-right: -5px;margin-bottom: -2px;">
+                    </div>
+                </div>
+            </div>
+               <div class="row" style="background-color: #80ffbf;border-radius: 15px;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px">
+                    <div class="col col-lg-12" id="tab_menu" style="background-clip: #ecffb3;color: #ff3300">
+                    <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Shop by category</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#fruits">Fruits</a>
+                                <a class="dropdown-item" href="#vegetables">Vegetables</a>
+                                <a class="dropdown-item" href="#HNC">Health and care</a>
+                                  <a class="dropdown-item" href="#beverage">Beverages</a>
+                               </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="billinggrocery.html">Billing Details</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#aboutus">About us</a>
+                            </li>
+                    </ul>
+                    </div>    
+              </div>
+        </div>
+        <div class="container" style="background-color: #b3b3cc;border-top-left-radius: 15px;border-top-right-radius: 15px">
+           <div class="row" id="home" style="background-color: #b3b3cc;border-top-left-radius: 15px;border-top-right-radius: 15pxs">
+                    <div class="col col-lg-8 offset-lg-2" id="carousel">
+                        <div id="demo" class="carousel slide" data-ride="carousel" style="border: 1px solid #bbff99;border-radius: 10px;width: 750px">
+                              <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                              </ul>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="#veg2"><img src="tomato.jpeg" alt="Los Angeles" width="750" height="400" id="tomato"></a>
+                                  <div class="carousel-caption">
+                                      <div style="background-color: indianred;border-radius: 10px">
+                                    <h3>Tomato</h3>
+                                    <p>Get the greatest prices for the freshest farm-grown tomatoes</p></div>
+                                  </div>   
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#veg1"><img src="carrots.jpeg" alt="Chicago" width="750" height="400" id="carrot"></a>
+                                  <div class="carousel-caption"><br><br>
+                                      <div style="background-color: yellow;border-radius: 10px">
+                                    <span class="h3" style="color: orangered">Carrots</span>
+                                    <p style="color: orangered">Home delivery available</p></div>
+                                  </div>   
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#fruit3"><img src="jf.jpg" alt="New York" width="750" height="400" id="jackfruit"></a>
+                                  <div class="carousel-caption">
+                                        <div style="background-color: aquamarine;border-radius: 10px">
+                                    <span class="h3">Jack Fruit</span>
+                                    
+                                      <p>Cut and Packed fresh fruits</p></div>
+                                  </div>   
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                              </a>
+                            </div>
+                    </div>    
+            </div>
+            </div>
+        <div class="container" style="background-color: #ffff99">
+            <div class="row">
+                <div class="col col-lg-12 "><br><br><p class="text-center" style="font-size: 30px;color: ghostwhite">Fruits</p><hr style="background-color: darkgrey;margin-top: -15px" size="2px">
+                </div>
+            </div>
+            <div class="row" id="fruits" style="background-color: #ffff99">
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="fruit0"><center><img class="img-thumbnail" src="mango.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;height: 350px;border-radius: 20px" id="fruit1"><center><img class="img-thumbnail" src="banana.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="fruit2"><center><img class="img-thumbnail" src="jackfruit.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+            </div>
+        </div>
+        
+         <div class="container" style="background-color: #80ff80">
+            <div class="row">
+                <div class="col col-lg-12 "><br><br><p class="text-center" style="font-size: 30px;color: ghostwhite">Vegetables</p><hr style="background-color: darkgrey;margin-top: -15px" size="2px">
+                </div>
+            </div>
+            <div class="row" id="vegetables">
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="veg0"><center><img class="img-thumbnail" src="carrots.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_veg"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;height: 350px;border-radius: 20px" id="veg1"><center><img class="img-thumbnail" src="tomato.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_veg"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="veg2"><center><img class="img-thumbnail" src="onions.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_veg"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container" style="background-color: #ff80ff">
+            <div class="row">
+                <div class="col col-lg-12 "><br><br><p class="text-center" style="font-size: 30px;color: ghostwhite">Health and Care</p><hr style="background-color: darkgrey;margin-top: -15px" size="2px">
+                </div>
+            </div>
+            <div class="row" id="HNC">
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="hnc0"><center><img class="img-thumbnail" src="shampoo.png" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_hnc"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;height: 350px;border-radius: 20px" id="hnc1"><center><img class="img-thumbnail" src="soap.jpg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_hnc"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="hnc2"><center><img class="img-thumbnail" src="broom.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_hnc"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+            </div>
+        </div>
+        
+        
+          <div class="container" style="background-color: #66ccff;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px">
+            <div class="row">
+                <div class="col col-lg-12 "><br><br><p class="text-center" style="font-size: 30px;color: ghostwhite">Beverages</p><hr style="background-color: darkgrey;margin-top: -15px" size="2px">
+                </div>
+            </div>
+            <div class="row" id="beverage">
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="bvg0"><center><img class="img-thumbnail" src="coke.jpg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_bvg"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;height: 350px;border-radius: 20px" id="bvg1"><center><img class="img-thumbnail" src="tropicana.jpeg" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_bvg"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+                <div class="col cl-lg-4" style="margin-right: 35px;border-radius: 20px" id="bvg2"><center><img class="img-thumbnail" src="aloevera.png" style="height: 200px;width: 200px"></center><br><p>Product : &ensp;<span></span></p><p>Price : &ensp;Rs.<span class="price_item_bvg"></span></p><p>Quantity : &ensp;<input type="number" style="border-color: white"></p>
+                </div>
+            </div>
+        </div>
+        <div id="offers">Hello</div>
+  
+        <script>
+            $(document).ready(function() {
+                for(var i=0;i<3;i++)
+                    {
+                        $("#fruit"+i).hover(function(){
+                        $(this).css("border", "1px solid green");
+                        }, function(){
+                        $(this).css("border", "1px solid #bbff99");
+                    });
+                          $("#veg"+i).hover(function(){
+                        $(this).css("border", "1px solid green");
+                        }, function(){
+                        $(this).css("border", "1px solid #bbff99");
+                    });
+                        $("#hnc"+i).hover(function(){
+                        $(this).css("border", "1px solid green");
+                        }, function(){
+                        $(this).css("border", "1px solid #bbff99");
+                    });
+                          $("#bvg"+i).hover(function(){
+                        $(this).css("border", "1px solid green");
+                        }, function(){
+                        $(this).css("border", "1px solid #bbff99");
+                    });
+                        
+                    }
+              
+           
+                $(window).load(function() {
+                $("#logo").animate({height:"120px"},"slow");
+                    $(".heading").animate({fontSize:"70px",marginLeft:"140px"},"slow");
+                    $
+                 });
+                
+                var fruits=[
+                    {
+                        name:"Mango",
+                        price: 79,
+                        quantity: 0
+                        
+                    },
+                    {
+                      name: "Banana",
+                        price: 15,
+                        quantity: 0
+                    },
+                    {
+                      name: "Jackfruit",
+                        price: 120,
+                        quantity: 0
+                    }
+                ];
+                var vegetables=[
+                    {
+                      name: "Carrot",
+                        price: 29,
+                        quantity: 0
+                    },
+                    {
+                      name: "Tomato",
+                        price: 40,
+                        quantity: 0
+                    },
+                    {
+                        name: "Onion",
+                        price: 70,
+                        quantity: 0
+                    }
+                ];
+                var healthncare=[
+                    {
+                      name:"Shampoo",
+                      price: 59,
+                        quantity: 0
+                    },
+                    {
+                      name: "Soap",
+                        price: 29,
+                        quantity: 0
+                    },
+                    {
+                        name: "Broomstick",
+                        price: 199,
+                        quantity: 0
+                    }
+                ];
+                var beverage =[
+                    {
+                      name: "Coca Cola",
+                        price: 20,
+                        quantity: 0
+                    },
+                    {
+                      name: "Tropicana Mixed Fruit",
+                        price: 13,
+                        quantity: 0
+                    },
+                    {
+                        name: "Aloe Vera Juice",
+                        price: 30,
+                        quantity: 0
+                    }
+                ];
+                for(var i=0;i<3;i++)
+                    {
+                        $("#fruit"+i).find("span").eq(0).text(fruits[i].name);
+                       $(".price_item").eq(i).text(fruits[i].price);
+                        fruits[i].quantity=$("#fruit"+i).find("input").val();
+                        
+                    }
+                 for(var i=0;i<3;i++)
+                    {
+                        $("#veg"+i).find("span").eq(0).text(vegetables[i].name);
+                       $(".price_item_veg").eq(i).text(vegetables[i].price);
+                        vegetables[i].quantity=$("veg"+i).find("input").val();
+                    }
+                
+                for(var i=0;i<3;i++)
+                    {
+                        $("#hnc"+i).find("span").eq(0).text(healthncare[i].name);
+                       $(".price_item_hnc").eq(i).text(healthncare[i].price);
+                        healthncare[i].quantity=$("veg"+i).find("input").val();
+                    }
+                
+                   for(var i=0;i<3;i++)
+                    {
+                        $("#bvg"+i).find("span").eq(0).text(beverage[i].name);
+                       $(".price_item_bvg").eq(i).text(beverage[i].price);
+                        beverage[i].quantity=$("veg"+i).find("input").val();
+                    }
+                
+            });
+            
+        </script>
+    </body>
+</html>
